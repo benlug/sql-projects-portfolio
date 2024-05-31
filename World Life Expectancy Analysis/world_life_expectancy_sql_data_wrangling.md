@@ -1,4 +1,4 @@
-# Data Cleaning
+## Data Cleaning
 
 This script performs a simple data cleaning of the 'world_life_expectancy' dataset by removing duplicates, imputing missing values, and updating the 'Status' variable using MySQL. Each query is accompanied by a short explanation of the query or the goal behind it.
 
@@ -127,11 +127,9 @@ SET w1.`Life expectancy` = ROUND((w2.`Life expectancy` + w3.`Life expectancy`) /
 WHERE w1.`Life expectancy` = '';
 ```
 
-# Exploratory Data Analysis
+## Exploratory Data Analysis
 
 This script performs a simple EDA on the 'world_life_expectancy' dataset to understand various trends and statistics.
-
-## Data Analysis
 
 Select all records from the `world_life_expectancy` table.
 ```sql
