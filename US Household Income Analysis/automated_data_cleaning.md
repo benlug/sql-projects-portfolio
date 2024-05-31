@@ -1,6 +1,4 @@
-# US Household Income SQL Analysis Script
-
-# Exploration and Precleaning 
+## Exploration and Precleaning 
 
 Count the total number of records in the ushouseholdincome table to get an onverview.
 ```sql
@@ -64,7 +62,7 @@ WHERE AWater = 0 OR AWater = '' OR AWater IS NULL OR
       ALand = 0 OR ALand = '' OR ALand IS NULL;
 ```
 
-# Data Cleaning 
+## Automated Data Cleaning 
 
 This script cleans the 'ushouseholdincome' data by removing duplicates, correcting state names, and updating place names.
 
@@ -185,7 +183,7 @@ CREATE EVENT run_data_cleaning
     DO CALL Copy_and_Clean_Data();
 ```
 
-# Exploratory Data Analysis
+## Exploratory Data Analysis
 
 ```sql
 USE us_household_income;
